@@ -1,0 +1,29 @@
+{
+    "name": "playwright_podstawowa_konfiguracja",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test",
+        "test:headed": "npx playwright test --headed",
+        "test:lekcja": "npm run test lekcja.spec.ts",
+        "test:headed:failed": "npx playwright test --headed --last-failed",
+        "test:headed:changed": "npx playwright test --headed --only-changed",
+        "test:tag": "npx playwright test --headed --grep \"@run2\"",
+        "test:ui": "npx playwright test --ui",
+        "report": "npx playwright show-report",
+        "prettier": "npx prettier --write ."
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.49.1",
+        "@types/node": "^20.10.4",
+        "eslint": "^9.12.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-playwright": "^1.7.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "globals": "^15.11.0",
+        "prettier": "3.3.3",
+        "typescript": "^5.2.2",
+        "typescript-eslint": "^8.9.0"
+    }
+}
